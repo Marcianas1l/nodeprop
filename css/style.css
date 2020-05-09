@@ -21,7 +21,7 @@ img {
     max-width: 100%;
 }
 /*ESTILIZANDO O CABEÇALHO*/
-.cabecalho {
+.container {
     width: 100%;
     float: left;
     padding: 3% 4%;
@@ -127,11 +127,6 @@ img {
     float: right;
 }
 /*SERVIÇOS*/
-.servicos {
-    width: 100%;
-    float: left;
-    padding: 3% 4%;
-}
 .servico {
     width: 100%;
     background-color: #fff;
@@ -144,29 +139,24 @@ img {
 }
 .inner {
     padding: 7%;
+    color: #130400;
 }
 .inner a {
     font-size: 1.5em;
-    color: #130400;
     font-weight: 700;
 }
 .inner h4 {
     font-size: 1.2em;
-    color: #130400;
     margin-top: 2%;
 }
 .inner p {
     margin-top: 6%;
-    color: #130400;
     line-height: 1.5em;
 }
 /*FORMULARIO DE INSCRIÇÃO*/
 /*NEWLETTER*/
 .newsletter {
-    width: 100%;
-    float: left;
     text-align: center;
-    padding: 3% 4%;
     background: #130400;
 }
 .newsletter h2 {
@@ -180,6 +170,8 @@ img {
 .newsletter form {
     margin-top: 2%;
 }
+/*=================BOTOES FORMULARIO====================*/
+
 .newsletter input {
     width: 100%;
     padding: 5px;
@@ -203,9 +195,6 @@ img {
 }
 /*RODAPÉ*/
 .rodape {
-    width: 100%;
-    float: left;
-    padding: 3% 4%;
     text-align: center;
     background: linear-gradient(to right, #ce2e3c, #da6709);
 }
@@ -223,4 +212,43 @@ img {
 }
 .sociais-icons a:hover {
     color: #fff;
+}
+
+/*==============MOBILE FIRST==========================*/
+/*==============SMARTPHONE================================*/
+@media screen and (min-width: 640px) {
+.logo {
+    width: 214px;
+    background: url(../img/logo.png) center center/214px no-repeat;
+    }
+}
+/*===============TABLETE==============================*/
+@media screen and (min-width: 800px) {
+    .logo {
+        width: 300px;
+        background: url(../img/logo.png) center center/300px no-repeat;
+        }
+    .servico {width: 49%; float: left; margin-right: 2%;}
+    .servico:nth-child(2) { margin: 0;}
+    .newsletter h2 {font-size: 2em;}
+    .newsletter button {width: 29%; padding:2%; float: right; margin-top: 0;}
+    .newsletter input {width: 70%; padding: 2%; float: left;}
+}
+/*===============MEDIUM=======DESKTOPS=======================*/
+@media screen and (min-width: 960px) {
+    .title {width: 70%; float: left;}
+    .buttons {width: 30%; float: right; margin-right: 0;}
+    .servico {width: 32%;margin: 1%;}
+    .servico:nth-child(2){ margin-top: 1%;}
+    .newsletter button {width: 20%; float: none;}
+    .newsletter input {width: 60%; float: none;margin-right: 1%;}
+}
+/*===============LARGE==============================*/
+@media screen and (min-width: 1180px) {
+    .btn-menu {display: none;}
+    .btn-close {display: none;}
+    .menu { width: auto; height: 56px; float:right;line-height: 56px;display: block!important;position: static; background-color: rgba(0, 0, 0, 0);padding: 0;}
+    .menu li {padding: 0;float: left;text-transform: uppercase;}
+    .menu li a {color: #130400; font-size: 20px; padding: 10px;font-weight: 700; color: #ce2e3c;}
+    .menu li a:hover { border: none;color:#da6709;}
 }
