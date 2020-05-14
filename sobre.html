@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página Pessoal - Marciana Silva</title>
-        <link rel="stylesheet" href="css/sobre.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>NodeProp - Especialidades em Soluções Digitais</title>
+        <meta name="description" content="Agencia especializada em Marketing Digital, Criação Aplicativos Mobile.">
+        <meta name="keywords" content="Agência digital, Marketing, sites">
+        <meta name="robots" contents="index, follow">
+        <meta name="author" content="Marciana Silva">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <!--Icone-->
+        <link rel="icon" href="img/icon.png">
     </head>
     <body>
-        <div class="container">
-            <header>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Meus projetos</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="sobre">
-                <div class="sobre-perfil">
-                    <img src="imagens/perfil.png" alt="Minha imagem">
-                    <div class="conteudo-perfil">
-                        <div class="historia">
-                            <i class="fas fa-user-check"></i>
-                            <p>&middot; Tenho 27 anos</p> 
-                            <p>&middot; Atualmente estou morando na cidade do Rio de Janeiro-RJ.</p>
-                            <p>&middot; Sou bacharela em Ciência da Computação pela UFAL.</p>
-                        </div>
-                        <div class="hobbies">
-                            <i class="far fa-heart"></i>
-                            <p>&middot; Adoro Ler</p>
-                            <p>&middot; Amo Viajar</p>
-                            <p>&middot; Praticar Exercícios</p>
-                            <p>&middot; Ouvir Músicas</p>
-                            <p>&middot; Jogar</p>
-                        </div>
-                        <div class="conquista">
-                            <i class="fas fa-award"></i>
-                            <p>&middot; Aprovação no vestibular - 2010</p>
-                            <p>&middot; Graduação - 2015</p>
-                        </div>
-                    </div>
-                    <div class="voltar">
-                        <p><a href="index.html">Página Inicial</a></p>
-                    </div>
-                </div>
+        <header class="cabecalho container">
+            <a href="index.html"><h1 class="logo">NodeProp - Especialidades em Soluções Digitais</h1></a>
+            <button class="btn-menu"><i class="fas fa-bars fa-lg"></i></button>
+            <nav class="menu">
+                <a class="btn-close"><i class="fas fa-times-circle"></i></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <div class="title">
+                <h2>OUSE INOVAR!</h2>
+                <h3> Criamos experiências e estabelecemos ações estrátegicas que concetam marcas e consumidores.</h3>
+            </div>
+            <div class="buttons">
+                <button class="btn-cadastrar">Cadastrar<i class="fas fa-arrow-alt-circle-right"></i></button>
+                <button class="btn-sobre">Sobre<i class="fas fa-question-circle"></i></button>
             </div>
         </div>
+        <main class="servicos container">
+            <article class="servico">
+                <a href="#"><img src="img/criacoes.jpg" alt="campanhas publicitarias"></a>
+                <div class="inner">
+                    <a href="#"> Campanhas Publicitárias</a>
+                    <h4>Impressos, VTs e Jingles</h4>
+                    <p>Se você está precisando de criação de algum material em específico, conte com a nossa equipe de profissionais. Eles farão toda campanha publicitária. VT, outdoor, folder, anúncio e muit mais pela sua empresa no mais alto padrão de qualidade. </p>
+                </div>
+            </article>
+            <article class="servico">
+                <a href="#"><img src="img/md.jpg" alt="Marketing Digital"></a>
+                <div class="inner">
+                    <a href="#"> Marketing Digital</a>
+                    <h4>Administração de redes sociais</h4>
+                    <p>Como agência de publicidade aplicamos estratégias nos meios digitais para que o seu negócio seja visto por milhões de usúarios. O Brasil é o 5º país no mundo. Por este motivo, o seu negócio não pode ficar fora do mercado digital. </p>
+                </div>
+            </article>
+            <article class="servico">
+                <a href="#"><img src="img/cs.jpg" alt="Criação de sites"></a>
+                <div class="inner">
+                    <a href="#"> Criação de sites</a>
+                    <h4>Administração de redes sociais</h4>
+                    <p>Como agência de publicidade aplicamos estratégias nos meios digitais para que o seu negócio seja visto por milhões de usúarios. O Brasil é o 5º país no mundo. Por este motivo, o seu negócio não pode ficar fora do mercado digital. </p>
+                </div>
+            </article>
+        </main>
+        <section class="newsletter container">
+            <h2> Inscrevam-se agora! </h2>
+            <h3> Receba novidades, dicas e muito mais</h3>
+            <form>
+                <input type="email" name="email" placeholder="Seu email">
+                <button>Cadastrar</button>
+            </form>
+        </section>
+        <!--RODAPÉ-->
+        <footer class="rodape container">
+            <div class="sociais-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+            <p class="copyright">
+                Copyright <i class="fas fa-copyright"></i> NodeProp 2020. Todos os direitos reservados.
+            </p>    
+        </footer>
+        <!--JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script>
+        $(".btn-menu").click(function(){
+          $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+          $(".menu").hide();
+        });
+        </script>
     </body>
 </html>
