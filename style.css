@@ -85,7 +85,7 @@ img {
   float: left;
   text-align: center;
   padding: 3% 4%;
-  background: url(../imagens/bg.jpg) no-repeat fixed;
+  background: url(imagens/bg.jpg) no-repeat fixed;
 }
 .title {
   width: 100%;
